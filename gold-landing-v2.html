@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>زرینه | گالری طلا و جواهر</title>
+<!-- برای شخصی‌سازی: نام برند (زرینه)، شماره تلفن (02100000000)، آدرس، ساعت کاری و نظرات مشتریان را عوض کنید. -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F2ED;--surface:#FFFFFF;--ink:#12292B;--muted:#546A6C;--gold:#A9781E;--gold-soft:#E8CF86;--deep:#0C2024;--deep2:#143338;--line:#DCD8CB;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0A1A1C;--surface:#112B2F;--ink:#F1EEE6;--muted:#A9BBBC;--gold:#E0B454;--line:#24403F}
+}
+:root[data-theme="dark"]{--bg:#0A1A1C;--surface:#112B2F;--ink:#F1EEE6;--muted:#A9BBBC;--gold:#E0B454;--line:#24403F}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.95}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.gtext{background:linear-gradient(100deg,#B8892B,#F3DC9B 45%,#B8892B 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,var(--deep2),var(--deep) 70%);color:#F1EEE6;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,transparent,var(--gold-soft),transparent)}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.5rem;letter-spacing:.02em}
+nav a{margin-inline-start:24px;font-size:.95rem;color:#D3DFDD}
+nav a.cta-s{border:1px solid var(--gold-soft);padding:6px 18px;border-radius:999px;color:var(--gold-soft)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:30px 0 84px}
+.hero h1{font-size:clamp(2.1rem,5.8vw,3.8rem);line-height:1.35;font-weight:800;margin:0 0 18px}
+.hero p{font-weight:300;font-size:1.12rem;color:#C5D3D1;max-width:30rem;margin:0 0 30px}
+.btn{display:inline-block;padding:13px 30px;border-radius:999px;font-weight:600;border:1.5px solid var(--gold-soft);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.fill{background:linear-gradient(135deg,#F3DC9B,#D4A94A);color:var(--deep);border-color:transparent}
+.btn.ghost{color:var(--gold-soft);margin-inline-start:10px}
+.stage{position:relative;max-width:400px;margin:0 auto}
+.stage svg{width:100%;display:block;filter:drop-shadow(0 20px 40px #0008)}
+.glint{transform-origin:150px 66px;animation:glint 5s ease-in-out infinite}
+@keyframes glint{0%,70%,100%{opacity:0;transform:scale(.4)}80%{opacity:1;transform:scale(1.2)}}
+@media (prefers-reduced-motion: reduce){.glint{animation:none;opacity:0}}
+
+/* trust */
+.trust{background:var(--deep);color:#DCE6E4;border-bottom:1px solid #1E3C40}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:20px 0;text-align:center;font-size:.92rem}
+.trust b{display:block;color:var(--gold-soft);font-size:1.02rem}
+
+section{padding:76px 0}
+h2{font-size:clamp(1.55rem,3.6vw,2.25rem);margin:0 0 10px;font-weight:800}
+.sub{color:var(--muted);margin:0 0 38px;max-width:36rem}
+
+/* collections */
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.col:hover{transform:translateY(-4px);box-shadow:0 18px 36px #0002}
+.col .art{background:radial-gradient(circle at 50% 40%,var(--deep2),var(--deep));padding:18px}
+.col .art svg{width:100%;max-width:130px;display:block;margin:0 auto}
+.col div.t{padding:16px 18px 20px}
+.col b{display:block;font-size:1.1rem}
+.col span{font-size:.88rem;color:var(--muted)}
+
+/* custom order steps */
+.steps-sec{background:var(--surface);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;counter-reset:s}
+.step{position:relative;padding-top:56px}
+.step::before{counter-increment:s;content:counter(s,persian);position:absolute;top:0;inset-inline-start:0;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#F3DC9B,#C79A3B);color:var(--deep);font-weight:800;display:grid;place-items:center}
+.step h3{margin:0 0 6px;font-size:1.15rem}
+.step p{margin:0;color:var(--muted)}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.rev p{margin:0 0 14px}
+.rev small{color:var(--gold);font-weight:600}
+
+/* cta */
+.cta{background:radial-gradient(ellipse at 80% 0%,var(--deep2),var(--deep) 70%);color:#F1EEE6;border-radius:30px;padding:56px 28px;text-align:center}
+.cta p{color:#C5D3D1;margin:0 0 26px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px;font-size:.92rem;color:#C5D3D1}
+.info b{display:block;color:var(--gold-soft)}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;padding-bottom:54px}
+  .stage{max-width:250px;order:-1}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .cols{grid-template-columns:repeat(2,1fr)}
+  .steps,.revs,.info{grid-template-columns:1fr}
+  nav a:not(.cta-s){display:none}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E3A8"/><stop offset=".5" stop-color="#C79A3B"/><stop offset="1" stop-color="#F6E3A8"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4FBFA"/><stop offset="1" stop-color="#8FC7C0"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="hero">
+  <div class="wrap">
+    <header>
+      <div class="logo gtext">زرینه</div>
+      <nav><a href="#collections">مجموعه‌ها</a><a href="#custom">ساخت سفارشی</a><a href="#reviews">نظرات</a><a class="cta-s" href="#contact">تماس</a></nav>
+    </header>
+    <div class="hero-grid">
+      <div>
+        <h1>طلایی که <span class="gtext">یادگار</span> می‌ماند</h1>
+        <p>جواهرات دست‌ساز با طلای ۱۸ عیار و سنگ‌های اصل؛ با گواهی عیار، فاکتور رسمی و بازخرید.</p>
+        <a class="btn fill" href="#collections">دیدن مجموعه‌ها</a>
+        <a class="btn ghost" href="#custom">سفارش ساخت</a>
+      </div>
+      <div class="stage">
+        <svg viewBox="0 0 300 300" role="img" aria-label="حلقه‌ی طلا با نگین الماس">
+          <circle cx="150" cy="185" r="92" fill="none" stroke="url(#g)" stroke-width="22"/>
+          <circle cx="150" cy="185" r="104" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+          <circle cx="150" cy="185" r="70" fill="none" stroke="#000" stroke-opacity=".3" stroke-width="2"/>
+          <path d="M122 98 L150 82 L178 98 L170 112 H130Z" fill="url(#g)"/>
+          <polygon points="150,22 184,56 150,96 116,56" fill="url(#gem)"/>
+          <path d="M116 56H184M150 22L134 56L150 96L166 56Z" stroke="#7DB5AE" stroke-width="1.2" fill="none"/>
+          <g class="glint" fill="#fff"><path d="M150 40 L154 62 L176 66 L154 70 L150 92 L146 70 L124 66 L146 62Z"/></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust"><div class="wrap trust-grid">
+  <div><b>گواهی عیار</b>برای هر قطعه</div>
+  <div><b>فاکتور رسمی</b>با ثبت مشخصات</div>
+  <div><b>بازخرید و تعویض</b>طبق شرایط گالری</div>
+  <div><b>بسته‌بندی هدیه</b>رایگان</div>
+</div></div>
+
+<section id="collections">
+  <div class="wrap">
+    <h2>مجموعه‌های زرینه</h2>
+    <p class="sub">از هدیه‌ی روزمره تا ست عروس؛ همه با دقت دست‌ساز می‌شوند.</p>
+    <div class="cols">
+      <a class="col" href="#contact"><div class="art"><svg viewBox="0 0 120 120"><circle cx="60" cy="74" r="34" fill="none" stroke="url(#g)" stroke-width="9"/><polygon points="60,10 76,26 60,44 44,26" fill="url(#gem)"/></svg></div><div class="t"><b>انگشتر</b><span>سولیتر، ساده و نگین‌دار</span></div></a>
+      <a class="col" href="#contact"><div class="art"><svg viewBox="0 0 120 120"><path d="M14 18 Q60 108 106 18" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/><path d="M60 80 L72 96 L60 114 L48 96Z" fill="url(#gem)"/></svg></div><div class="t"><b>گردنبند</b><span>پلاک، زنجیر و آویز</span></div></a>
+      <a class="col" href="#contact"><div class="art"><svg viewBox="0 0 120 120"><ellipse cx="60" cy="64" rx="46" ry="30" fill="none" stroke="url(#g)" stroke-width="12"/><circle cx="60" cy="34" r="5" fill="url(#gem)"/><circle cx="30" cy="46" r="4" fill="url(#gem)"/><circle cx="90" cy="46" r="4" fill="url(#gem)"/></svg></div><div class="t"><b>دستبند</b><span>النگو، تنیس و بنگل</span></div></a>
+      <a class="col" href="#contact"><div class="art"><svg viewBox="0 0 120 120"><g fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"><path d="M38 12 V34"/><path d="M82 12 V34"/></g><path d="M38 36 L48 56 L38 82 L28 56Z" fill="url(#gem)"/><path d="M82 36 L92 56 L82 82 L72 56Z" fill="url(#gem)"/></svg></div><div class="t"><b>گوشواره</b><span>میخی، آویز و حلقه‌ای</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="steps-sec" id="custom">
+  <div class="wrap">
+    <h2>طرح خودتان را بسازید</h2>
+    <p class="sub">سفارش ساخت در سه مرحله انجام می‌شود.</p>
+    <div class="steps">
+      <div class="step"><h3>طرح را بگویید</h3><p>عکس یا ایده‌تان را بفرستید یا در گالری با طراح ما صحبت کنید.</p></div>
+      <div class="step"><h3>تایید و ساخت</h3><p>بعد از تایید طرح و قیمت، استادکار ساخت قطعه را شروع می‌کند.</p></div>
+      <div class="step"><h3>تحویل با گواهی</h3><p>قطعه با گواهی عیار، فاکتور و بسته‌بندی هدیه تحویل داده می‌شود.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>نظر مشتریان</h2>
+    <p class="sub">این نظرها نمونه هستند؛ قبل از انتشار با نظر واقعی مشتریان جایگزین کنید.</p>
+    <div class="revs">
+      <div class="rev"><p>حلقه‌ی نامزدی را سفارشی ساختم و دقیقاً همان‌طور شد که می‌خواستم.</p><small>سارا م.</small></div>
+      <div class="rev"><p>گواهی عیار و فاکتور کامل بود و برخوردشان خیلی محترمانه بود.</p><small>رضا ک.</small></div>
+      <div class="rev"><p>برای هدیه خریدم، بسته‌بندی‌اش واقعاً شیک بود.</p><small>نگار ا.</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2 class="gtext" style="display:inline-block">قطعه‌ی بعدی شما اینجاست</h2>
+      <p>برای مشاوره، قیمت‌گذاری و سفارش ساخت با ما در تماس باشید.</p>
+      <a class="btn fill" href="tel:+982100000000">تماس با گالری</a>
+      <a class="btn ghost" href="https://wa.me/982100000000">پیام در واتس‌اپ</a>
+      <div class="info">
+        <div><b>تلفن</b>۰۲۱-۰۰۰۰۰۰۰۰</div>
+        <div><b>ساعت کاری</b>هر روز ۱۰ تا ۲۰</div>
+        <div><b>آدرس</b>تهران، آدرس گالری را بنویسید</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer><span>© زرینه، گالری طلا و جواهر</span><span>همه‌ی حقوق محفوظ است</span></footer>
+</div>
+</body>
+</html>
